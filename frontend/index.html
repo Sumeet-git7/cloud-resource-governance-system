@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cloud Governance System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Cloud Resource Governance System</h1>
+
+<h2>Create Request</h2>
+
+<form id="requestForm">
+
+  <input type="text" id="requester_name" placeholder="Requester Name" required>
+
+  <input type="text" id="department" placeholder="Department">
+
+  <input type="text" id="resource_type" placeholder="Resource Type" required>
+
+  <input type="text" id="purpose" placeholder="Purpose" required>
+
+  <input type="text" id="environment" placeholder="Environment">
+
+  <input type="number" id="duration_days" placeholder="Duration Days" required>
+
+  <input type="number" id="usage_estimate" placeholder="Usage Estimate" required>
+
+  <input type="text" id="access_justification" placeholder="Access Justification" required>
+
+  <button type="submit">Create Request</button>
+
+</form>
+
+<h2>All Requests</h2>
+
+<button onclick="loadRequests()">Refresh Requests</button>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Requester</th>
+      <th>Resource</th>
+      <th>Status</th>
+      <th>Cost</th>
+    </tr>
+  </thead>
+
+  <tbody id="requestTable"></tbody>
+
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
