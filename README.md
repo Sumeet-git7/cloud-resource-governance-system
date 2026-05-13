@@ -1,5 +1,6 @@
-Cloud Resource Request and Cost Governance Mini System
-Project Overview
+### Cloud Resource Request and Cost Governance Mini System
+
+### Project Overview
 
 The Cloud Resource Request and Cost Governance Mini System is a mini cloud governance platform developed to manage cloud resource requests in a structured and controlled manner.
 
@@ -16,7 +17,7 @@ improve governance and operational transparency
 
 The project supports request creation, validation, approval workflow, cost categorization, filtering, reporting, expiry tracking, and governance dashboard functionality.
 
-Problem Statement
+### Problem Statement
 
 Many organizations provision cloud resources without maintaining proper ownership records, business justification, expiry tracking, or cost awareness.
 
@@ -31,7 +32,7 @@ unmanaged cloud growth
 
 The objective of this project is to build a governance-focused cloud resource request management system that allows users to request cloud resources while enabling administrators to review, approve, reject, monitor, and report on cloud resource usage.
 
-Project Objectives
+### Project Objectives
 
 The main objectives of this project are:
 
@@ -44,10 +45,9 @@ Generate governance reports and insights
 Improve visibility into cloud operations
 Simulate enterprise cloud governance practices
 Features Implemented
+
 1. Resource Request Creation
-
 Users can create cloud resource requests by providing:
-
 requester name
 department
 resource type
@@ -56,20 +56,19 @@ environment
 duration
 usage estimate
 access justification
+
 2. Input Validation
-
 The system validates:
-
 missing requester name
 missing purpose
 invalid duration
 invalid usage estimate
 incomplete access justification
 duplicate requests
+
+
 3. Request Lifecycle Tracking
-
 The project supports the following request statuses:
-
 submitted
 under_review
 approved
@@ -77,57 +76,50 @@ rejected
 active
 expired
 closed
+
+
 4. Approval and Rejection Workflow
-
 Reviewers can:
-
 approve requests
 reject requests
 add reviewer comments
 assign ownership
 define expiry dates
+
 5. Cost Governance Logic
-
 The project classifies requests into:
-
 low cost
 medium cost
 high cost
-
 Cost classification is based on:
-
 resource type
 duration
 usage estimate
+
 6. Governance Dashboard
-
 The governance dashboard provides:
-
 total requests
 approved requests
 rejected requests
 active resources
 expired resources
 high-cost requests
+
 7. Expiry Monitoring
-
 The project tracks:
-
 resources nearing expiry
 resources missing ownership information
+
 8. Filtering and Search
-
 Requests can be filtered using:
-
 requester name
 status
 environment
 resource type
 cost category
+
 9. Final Governance Report
-
 The system provides a final governance report containing:
-
 governance summary
 all request records
 operational visibility
@@ -150,7 +142,9 @@ Git
 GitHub
 Deployment
 Render
-System Architecture
+
+
+### System Architecture
 
 Frontend → Backend APIs → Validation Layer → AWS RDS Database → Governance Reporting
 
@@ -165,13 +159,12 @@ Governance APIs generate reports and summaries
 Project Folder Structure
 cloud-governance-project/
 │
-├── backend/
-│   ├── config/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── app.js
-│   ├── package.json
+├── config/
+├── controllers/
+├── models/
+├── routes/
+├── app.js
+├── package.json
 │   └── .env
 │
 ├── frontend/
@@ -181,6 +174,8 @@ cloud-governance-project/
 │
 ├── README.md
 └── .gitignore
+
+
 Database Design
 Request Table Fields
 Field	Purpose
@@ -373,7 +368,9 @@ cost governance logic
 validation and error handling
 frontend-backend integration
 deployment and version control
-Conclusion
+
+
+### Conclusion
 
 The Cloud Resource Request and Cost Governance Mini System successfully demonstrates how cloud governance practices can be implemented in a real-world cloud operations workflow.
 
@@ -388,7 +385,7 @@ reporting and monitoring
 
 This solution helps organizations improve accountability, reduce unnecessary cloud spending, and manage cloud resources more effectively.
 
-Author
+### Author
 
 Name: Sumeet
 
